@@ -20,5 +20,5 @@ Syntax: 	x=myregrcomp(x1,y1,x2,y2)
 
 To cite this file, this would be an appropriate format:
 Cardillo G. (2007) MyRegressionCOMP: a simple routine to compare two LS
-regression. 
+regressions. 
 http://www.mathworks.com/matlabcentral/fileexchange/15953
