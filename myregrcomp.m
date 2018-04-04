@@ -10,8 +10,10 @@ function myregrcomp(x1,y1,x2,y2)
 % Syntax: 	x=myregrcomp(X)
 %
 %     Inputs:
-%           X - data matrix (Size of matrix must be n-by-3;
-%           x data=column 1, y data=column 2, regression=column 3). 
+%           Xn - Array of the independent variable 
+%           Yn - Dependent variable. If Y is a matrix, the i-th Y row is a
+%           repeated measure of i-th X point. The mean value will be used
+%           verbose - Flag to display all information (default=1) 
 %     Outputs:
 %           - Summary of MYREGR function
 %           - Global test
