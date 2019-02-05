@@ -99,14 +99,7 @@ function myregrcomp(x1,y1,x2,y2)
 % regression. 
 % http://www.mathworks.com/matlabcentral/fileexchange/15953
 
-if exist('myregr.m','file')==0
-    filename=unzip('https://it.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/15473/versions/10/download/zip','prova');
-    Index = contains(filename,'myregr.m');
-    current=cd;
-    copyfile(filename{Index},current)
-    rmdir('prova','s')
-    clear filename Index current 
-end
+assert(exist('myregr.m','file')~=0,'You must download myregr function from https://it.mathworks.com/matlabcentral/fileexchange/15473-myregression')
 
 %first regression
 disp('First regression parameters estimation')
